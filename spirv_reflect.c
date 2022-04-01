@@ -1937,6 +1937,7 @@ static SpvReflectResult ParseDescriptorBindings(
     p_descriptor->name = p_node->name;
     p_descriptor->binding = p_node->decorations.binding.value;
     p_descriptor->input_attachment_index = p_node->decorations.input_attachment_index.value;
+    p_descriptor->decoration_flags = ApplyDecorations(&p_node->decorations);
     p_descriptor->set = p_node->decorations.set.value;
     p_descriptor->count = 1;
     p_descriptor->uav_counter_id = p_node->decorations.uav_counter_buffer.value;

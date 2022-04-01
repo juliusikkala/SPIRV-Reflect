@@ -384,6 +384,7 @@ typedef struct SpvReflectDescriptorBinding {
   uint32_t                            binding;
   uint32_t                            input_attachment_index;
   uint32_t                            set;
+  SpvReflectDecorationFlags           decoration_flags;
   SpvReflectDescriptorType            descriptor_type;
   SpvReflectResourceType              resource_type;
   SpvReflectImageTraits               image;
